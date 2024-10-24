@@ -5,11 +5,26 @@
     unicode-range: U+71D5, U+6816, U+5C7F; // 燕, 栖, 屿
 }
 
+@font-face {
+    font-family: 'SanJiXingKaiJianTi-Cu';
+    src: url('/assets/fonts/SanJiXingKaiJianTi-Cu.woff') format('woff');
+    unicode-range: U+832B, U+6D77, U+5C7F, U+6709, U+71D5, U+800C, U+5C45; // 茫, 海, 屿, 有, 燕, 而, 居
+}
+
 .vp-blog-hero-title {
     font-family: 'PingFangLaiJiangHuFeiYangTi', sans-serif;
     font-size: 8rem;
 
     @media (max-width: 768px) {
         font-size: 6rem;
+    }
+}
+
+.vp-blog-hero-description {
+    font-family: 'SanJiXingKaiJianTi-Cu', sans-serif;
+    font-size: 2rem;
+
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
     }
 }
