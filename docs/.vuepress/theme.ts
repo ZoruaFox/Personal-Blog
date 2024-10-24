@@ -64,7 +64,9 @@ export default hopeTheme({
      },
 
     components: {
-      components: ["Badge", "VPCard"],
+      components: [
+        "Badge", "VPCard", "BiliBili", "FontIcon", "Share", "VPBanner"
+      ],
     },
 
     // 此处开启了很多功能用于演示，你应仅保留用到的功能。
@@ -74,6 +76,14 @@ export default hopeTheme({
       size: true,
     },
 
+    docsearch: {
+      appId: "ESTBS81YBR",
+      apiKey: "db5dc377531c90701bc0e9c7344941cb",
+      indexName: "zorua",
+      placeholder: "搜索文档",
+      // appId, apiKey 和 indexName 是必填的
+    },
+    
     // markdownMath: {
     //   // 启用前安装 katex
     //   type: "katex",
@@ -138,66 +148,5 @@ export default hopeTheme({
       // sandpack: true,
     },
 
-    // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
-    // pwa: {
-    //   favicon: "/favicon.ico",
-    //   cacheHTML: true,
-    //   cacheImage: true,
-    //   appendBase: true,
-    //   apple: {
-    //     icon: "/assets/icon/apple-icon-152.png",
-    //     statusBarColor: "black",
-    //   },
-    //   msTile: {
-    //     image: "/assets/icon/ms-icon-144.png",
-    //     color: "#ffffff",
-    //   },
-    //   manifest: {
-    //     icons: [
-    //       {
-    //         src: "/assets/icon/chrome-mask-512.png",
-    //         sizes: "512x512",
-    //         purpose: "maskable",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-mask-192.png",
-    //         sizes: "192x192",
-    //         purpose: "maskable",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-512.png",
-    //         sizes: "512x512",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-192.png",
-    //         sizes: "192x192",
-    //         type: "image/png",
-    //       },
-    //     ],
-    //     shortcuts: [
-    //       {
-    //         name: "Demo",
-    //         short_name: "Demo",
-    //         url: "/demo/",
-    //         icons: [
-    //           {
-    //             src: "/assets/icon/guide-maskable.png",
-    //             sizes: "192x192",
-    //             purpose: "maskable",
-    //             type: "image/png",
-    //           },
-    //         ],
-    //       },
-    //     ],
-    //   },
-    // },
-
-    // 如果你需要幻灯片，安装 @vuepress/plugin-revealjs 并取消下方注释
-    // revealjs: {
-    //   plugins: ["highlight", "math", "search", "notes", "zoom"],
-    // },
   },
 });
