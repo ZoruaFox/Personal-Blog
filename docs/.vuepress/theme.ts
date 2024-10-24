@@ -152,6 +152,7 @@ export default hopeTheme({
       // install sandpack-vue3 before enabling it
       // sandpack: true,
     },
-
   },
-});
+},
+{ custom: true },
+);
