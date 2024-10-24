@@ -2,6 +2,7 @@ import { hopeTheme } from "vuepress-theme-hope";
 
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
+import notFoundMsg from './notFoundMsg.js'
 
 export default hopeTheme({
   hostname: "https://zorua.top",
@@ -47,6 +48,10 @@ export default hopeTheme({
     },
   },
 
+  routeLocales: {
+    notFoundMsg: notFoundMsg
+  },
+  
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
   // hotReload: true,
 
