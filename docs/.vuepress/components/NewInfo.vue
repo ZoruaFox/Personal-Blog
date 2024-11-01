@@ -4,7 +4,7 @@
         <div class="blogroll-title">友情链接</div>
         <ul>
             <li v-for="(i, index) in blogroll" :key="index">
-                <a :href="i.link">{{ i.title }}</a>
+                <a :href="i.link" target="_blank">{{ i.title }}</a>
             </li>
         </ul>
     </div>
