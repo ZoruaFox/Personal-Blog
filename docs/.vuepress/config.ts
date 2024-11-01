@@ -20,6 +20,10 @@ export default defineUserConfig({
       __dirname,
       "./components/HomePage.vue",
     ),
+    "@theme-hope/modules/blog/components/InfoList": path.resolve(
+      __dirname,
+      "./components/NewInfo.vue",
+    )
   },
   
   // 和 PWA 一起启用
