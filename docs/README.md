@@ -13,9 +13,7 @@ projects:
     desc: 开放的有兽焉wiki
     link: https://youshou.wiki
   - icon: /assets/icon/minecraft-server-icon.webp
-    name: |
-      有兽焉
-      Minecraft粉丝服
+    name: 有兽焉Minecraft粉丝服
     desc: 400+玩家绝赞叠高高中
     link: https://help.mc.zorua.top
 
