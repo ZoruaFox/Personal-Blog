@@ -6,6 +6,10 @@ const blogroll = [
     {
         title: '罗比的技术部落',
         link: 'https://wiki.zorua.cn',
+    },
+    {
+        title: 'Pavilion_Cat 的小窝',
+        link: 'https://blog.pavilioncat.com/',
     }
 ]
 
