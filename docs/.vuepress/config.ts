@@ -15,20 +15,7 @@ export default defineUserConfig({
   theme,
 
   plugins: [
-    oml2dPlugin({
-      // 在这里配置选项
-      models: [
-        {
-          path: 'https://cos.zorua.top/comission/YuSheng/%E5%B2%9A%E7%BE%BD.model3.json',
-          scale: 0.12,
-          position: [-10, 50],
-          stageStyle: {
-            width: 350
-          }
-        }
-      ]
-    })
-
+    
     //  ...other plugins
   ],
 

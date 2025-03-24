@@ -12,8 +12,6 @@ export default hopeTheme({
     url: "https://zorua.top",
   },
 
-  iconAssets: "fontawesome-with-brands",
-
   logo: "./assets/icon/title-icon.png",
 
   repo: "ZoruaFox/Personal-Blog",
@@ -51,9 +49,49 @@ export default hopeTheme({
   routeLocales: {
     notFoundMsg: notFoundMsg
   },
-  
+
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
   // hotReload: true,
+
+  markdown: {
+    align: true,
+    attrs: true,
+    component: true,
+    demo: true,
+    include: true,
+    mark: true,
+    plantuml: true,
+    spoiler: true,
+    stylize: [
+      {
+        matcher: "Recommended",
+        replacer: ({ tag }) => {
+          if (tag === "em")
+            return {
+              tag: "Badge",
+              attrs: { type: "tip" },
+              content: "Recommended",
+            };
+        },
+      },
+    ],
+    sub: true,
+    sup: true,
+    tasklist: true,
+    vPre: true,
+    figure: true,
+    // 启用图片懒加载
+    imgLazyload: true,
+    // 启用图片标记
+    imgMark: true,
+    // 启用图片大小
+    imgSize: true,
+    alert: true,
+    vuePlayground: true,
+    mermaid: true,
+    echarts: true,
+    flowchart: true,
+  },
 
   // 在这里配置主题提供的插件
   plugins: {
@@ -74,13 +112,6 @@ export default hopeTheme({
       ],
     },
 
-    // 此处开启了很多功能用于演示，你应仅保留用到的功能。
-    markdownImage: {
-      figure: true,
-      lazyload: true,
-      size: true,
-    },
-
     docsearch: {
       appId: "ESTBS81YBR",
       apiKey: "db5dc377531c90701bc0e9c7344941cb",
@@ -89,68 +120,23 @@ export default hopeTheme({
       // appId, apiKey 和 indexName 是必填的
     },
 
-    // markdownMath: {
-    //   // 启用前安装 katex
-    //   type: "katex",
-    //   // 或者安装 mathjax-full
-    //   type: "mathjax",
-    // },
-
-
-    markdown: {
-      align: true,
-      attrs: true,
-      component: true,
-      demo: true,
-      include: true,
-      mark: true,
-      plantuml: true,
-      spoiler: true,
-      stylize: [
-        {
-          matcher: "Recommended",
-          replacer: ({ tag }) => {
-            if (tag === "em")
-              return {
-                tag: "Badge",
-                attrs: { type: "tip" },
-                content: "Recommended",
-              };
-          },
-        },
-      ],
-      sub: true,
-      sup: true,
-      tasklist: true,
-      vPre: true,
+    icon: {
+      // 关键词: "iconify", "fontawesome", "fontawesome-with-brands"
+      assets: "fontawesome-with-brands",
+    },
 
       // 在启用之前安装 chart.js
       // chart: true,
 
       // insert component easily
 
-      // 在启用之前安装 echarts
-      // echarts: true,
-
-      // 在启用之前安装 flowchart.ts
-      // flowchart: true,
-
-      // gfm requires mathjax-full to provide tex support
-      gfm: true,
-
-      // 在启用之前安装 mermaid
-      // mermaid: true,
-
       // playground: {
       //   presets: ["ts", "vue"],
       // },
-
-      vuePlayground: true,
 
       // install sandpack-vue3 before enabling it
       // sandpack: true,
     },
   },
-},
 { custom: true },
 );
