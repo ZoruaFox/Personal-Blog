@@ -70,7 +70,7 @@ export default hopeTheme({
 
     components: {
       components: [
-        "Badge", "VPCard", "BiliBili", "FontIcon", "Share", "VPBanner"
+        "Badge", "VPCard", "BiliBili", "Share", "VPBanner"
       ],
     },
 
@@ -88,7 +88,7 @@ export default hopeTheme({
       placeholder: "搜索文档",
       // appId, apiKey 和 indexName 是必填的
     },
-    
+
     // markdownMath: {
     //   // 启用前安装 katex
     //   type: "katex",
@@ -96,10 +96,8 @@ export default hopeTheme({
     //   type: "mathjax",
     // },
 
-    // 此功能被开启用于演示，你应仅当使用时保留。
-    markdownTab: true,
 
-    mdEnhance: {
+    markdown: {
       align: true,
       attrs: true,
       component: true,
@@ -138,7 +136,7 @@ export default hopeTheme({
       // flowchart: true,
 
       // gfm requires mathjax-full to provide tex support
-       gfm: true,
+      gfm: true,
 
       // 在启用之前安装 mermaid
       // mermaid: true,
