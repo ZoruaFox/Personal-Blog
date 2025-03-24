@@ -116,9 +116,9 @@ graph LR
 
 最佳实践是根据文件类型设置合理的缓存时间，如图片、CSS、JavaScript及字体文件等。
 
-![image.png](https://rivers-collie.oss-accelerate.aliyuncs.com/cyber-wiki-prod/image/a98b1aba0dc97ceae94196b41545d43b.png)
+![](https://rivers-collie.oss-accelerate.aliyuncs.com/cyber-wiki-prod/image/a98b1aba0dc97ceae94196b41545d43b.png)
 
-![image.png](https://rivers-collie.oss-accelerate.aliyuncs.com/cyber-wiki-prod/image/219a38289e51ba185e1bd079d29e4df6.png)
+![](https://rivers-collie.oss-accelerate.aliyuncs.com/cyber-wiki-prod/image/219a38289e51ba185e1bd079d29e4df6.png)
 
 ### 雷池WAF规则优化
 
@@ -133,9 +133,9 @@ graph LR
 - 需正确配置EdgeOne或ESA的HTTP头部传递
 - 确认边缘节点的所有IP段已添加到信任列表中
 
-![image.png](https://rivers-collie.oss-accelerate.aliyuncs.com/cyber-wiki-prod/image/ab2aafd35a56e86bc55b02f6631ec658.png)
+![](https://rivers-collie.oss-accelerate.aliyuncs.com/cyber-wiki-prod/image/ab2aafd35a56e86bc55b02f6631ec658.png)
 
-![image.png](https://rivers-collie.oss-accelerate.aliyuncs.com/cyber-wiki-prod/image/73914b14cdcfe271298a3f039fc4fbb7.png)
+![](https://rivers-collie.oss-accelerate.aliyuncs.com/cyber-wiki-prod/image/73914b14cdcfe271298a3f039fc4fbb7.png)
 
 ### 源站保护配置
 
@@ -205,7 +205,7 @@ HTTP头部传递:
   - `/images/*`：缓存3天（排除上传目录）
   - `/skins/*`：缓存1天
 
-![image.png](https://rivers-collie.oss-accelerate.aliyuncs.com/cyber-wiki-prod/image/3492b3416fab402782c7e69b9ac44a42.png)
+![](https://rivers-collie.oss-accelerate.aliyuncs.com/cyber-wiki-prod/image/3492b3416fab402782c7e69b9ac44a42.png)
 
 #### 2. 雷池WAF专项防护配置
 
