@@ -59,6 +59,7 @@ graph TD
 
 MediaWiki的防御痛点之一在于核心交互协议的复杂性。在许多技术Wiki页面中，往往包含了大量用于展示的系统代码段或SQL指令，传统的正则匹配常常无法区分“文本展示”与“实际攻击”。
 
+![template-false-positive](https://rivers-collie.oss-accelerate.aliyuncs.com/cyber-wiki-prod/image/9e71e1ae2f59e4c3f48af9f3e228fcc1.png)
 ### 1. 语法树分析的优势
 在雷池项目的底层代码中，`yanshi/` 目录正是负责核心检测的 **T-Sec 语义分析引擎**。该引擎不局限于词汇黑名单，而是通过 C++ 模块（如 `fsa.cc`, `compiler`, `parser.y` 等）执行词法拆解和上下文无关文法（CFG）的逻辑构建。
 
@@ -75,6 +76,8 @@ MediaWiki的 `api.php` 处理了大量的序列化及深层编码的参数请求
 1. **风险触发**：MediaWiki检测到某用户产生自动化SPAM行为。
 2. **边缘拦截广播**：应用后台向雷池WAF通过安全凭证调用 `/api/IPGroupAPI`。
 3. **全局拉黑**：雷池提取攻击源IP（或CIDR段），将其直接加入网络边界层的封禁池中（从Nginx底层直接 `Drop` 连接），彻底掐断该源后续一切消耗性请求。
+
+![interact-with-api](https://rivers-collie.oss-accelerate.aliyuncs.com/cyber-wiki-prod/image/5435a6bf053a52f40a782b588c408308.png)
 
 ## 四、 Wasm 扩展：针对 MediaWiki API 的业务前置预审
 
