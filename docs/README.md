@@ -12,6 +12,10 @@ projects:
     name: 有兽档案馆
     desc: 开放的有兽焉wiki
     link: https://youshou.wiki
+  - icon: /assets/icon/furrywiki-logo.webp
+    name: 福瑞百科
+    desc: FurryWiki
+    link: https://furrywiki.org.cn
   - icon: /assets/icon/minecraft-server-icon.webp
     name: 有兽焉Minecraft粉丝服
     desc: 400+玩家绝赞叠高高中
