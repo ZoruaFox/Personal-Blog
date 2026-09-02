@@ -1,4 +1,8 @@
 packages: []
+overrides:
+  vite: 7.3.6
+  immutable@5.1.5: 5.1.9
+  picomatch@4.0.3: 4.0.7
 allowBuilds:
   '@parcel/watcher': true
   esbuild: true
