@@ -47,8 +47,8 @@ jobs:
         run: |
           ossutil config -L CH -e ${{ secrets.OSS_ENDPOINT }} -i ${{ secrets.OSS_ACCESS_KEY_ID }} -k ${{ secrets.OSS_ACCESS_KEY_SECRET }}
       
-      - name: 上传dist下内容至阿里云OSS
-        run: ossutil64 cp -r /home/runner/work/Personal-Blog/Personal-Blog/docs/.vuepress/dist/ oss://zoruablog/ -u -f
+      - name: 同步dist下内容至阿里云OSS
+        run: ossutil64 sync /home/runner/work/Personal-Blog/Personal-Blog/docs/.vuepress/dist/ oss://zoruablog/ --delete -u -f
 
 #      - name: 部署文档
 #        uses: JamesIves/github-pages-deploy-action@v4
